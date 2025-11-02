@@ -50,6 +50,13 @@ print(stroka[::-2])
 # task 8
 
 stroka2 = "PythonProgrammingLnguage"
+word1 = stroka2[:6]
+word2 = stroka2[-8:]
+result = word1 + " " + word2
+print(result)
+
+# task 9
+stroka3 = "I love Python Programming!"
 
 # Task 15
 # name = input("Write the name: ")
@@ -91,11 +98,11 @@ formatted = f'+996 ({tel[1:4]}) {tel[4:7]}-{tel[7:]}'
 print(formatted)
 
 # task 18
-stroka3 = input("vvedite text: ")
-if len(stroka3) > 5:
+stroka_3 = input("vvedite text: ")
+if len(stroka_3) > 5:
     print("too long")
 else:
-    print(stroka3)
+    print(stroka_3)
 
 # task 19
 # stroka3 = input("vvedite text: ")
@@ -131,4 +138,3 @@ if "@" in parol or "#" in parol or "%" in parol:
         print("corotco")
 else:
     print("incorrect")
-
