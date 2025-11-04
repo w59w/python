@@ -15,8 +15,8 @@ string3 = str3.replace('a', '#')
 # task 4
 name = input("enter your name: ")
 surname = input("enter your surname: ")
-format = f"{surname} {name} - отличный студент!"
-print(format)
+format1 = f"{surname} {name} - отличный студент!"
+print(format1)
 
 # task 5
 code = input("enter the code og your region: ")
@@ -50,7 +50,7 @@ else:
 string7 = input("enter: ")
 if string7 == string7.isdigit():
     print("number")
-elif string7 == string7.isalpha()
+elif string7 == string7.isalpha():
     print("alpha")
 else:
     print("other")

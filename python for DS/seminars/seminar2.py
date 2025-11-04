@@ -1,3 +1,4 @@
+import math
 # task 1
 x = int(input("Vvedite chislo: "))
 if x > 5:
@@ -44,7 +45,7 @@ else:
 
 # task 7
 f = int(input("Vvedite chislo: "))
-if (f>=5) and (f<15) and (f!=10):
+if (f >= 5) and (f < 15) and (f != 10):
     print("Yes")
 else:
     print("No")
@@ -78,16 +79,16 @@ else:
     print("no")
 
 # task 12
-l = int(input("Vvedite chislo:"))
-if (l > 5) or (l <= 3):
+l1 = int(input("Vvedite chislo:"))
+if (l1 > 5) or (l1 <= 3):
     print("yes")
-elif 3 < l <= 6:
+elif 3 < l1 <= 6:
     print("yes")
-elif l >= 4:
+elif l1 >= 4:
     print("yes")
-elif (-2 < l <= 3) or (l > 5):
+elif (-2 < l1 <= 3) or (l1 > 5):
     print("yes")
-elif (0 < l < 4) or (6 <= l < 10):
+elif (0 < l1 < 4) or (6 <= l1 < 10):
     print("yes")
 else:
     print("no")
@@ -116,7 +117,7 @@ else:
 
 # task 16
 num1 = int(input("Vvedite chislo: "))
-num2 = num1**1/2
+num2 = num1 ** 1 / 2
 if num1 / num2 == 3:
     print("ok")
 else:
@@ -125,7 +126,7 @@ else:
 # task 17
 num4 = int(input("Vvedite chislo: "))
 num5 = int(input("Vvedite chislo: "))
-if (num4 + num5) > 0 < (num4 - num5) :
+if (num4 + num5) > 0 < (num4 - num5):
     print("++")
 elif (num4 + num5) > 0 > (num4 - num5):
     print("+-")
@@ -137,18 +138,19 @@ else:
     print("vvedite chisla!")
 
 # task 18
-import math
+
+
 a = int(input("Vvedite chislo: "))
 b = int(input("Vvedite chislo: "))
 c = int(input("Vvedite chislo: "))
-D = b**2 - 4*a*c
+D = b ** 2 - 4 * a * c
 if D < 0:
     print("kornei net")
 elif D == 0:
-    x = -b / (2*a)
+    x = -b / (2 * a)
 else:
-    x1 = (-b + math.sqrt(D)) / (2*a)
-    x2 = (-b - math.sqrt(D)) / (2*a)
+    x1 = (-b + math.sqrt(D)) / (2 * a)
+    x2 = (-b - math.sqrt(D)) / (2 * a)
 
 # task 19
 aa = int(input("Vvedite chislo: "))
@@ -171,7 +173,7 @@ elif max_side == bbb:
 else:
     cat1, cat2 = aaa, bbb
 
-if max_side**2 == cat1**2 + cat2**2:
+if max_side ** 2 == cat1 ** 2 + cat2 ** 2:
     print("eto pryamougolni treugolnik")
 else:
     print("eto ne pryamougolni treugolnik")
