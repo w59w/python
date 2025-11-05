@@ -54,4 +54,42 @@ print(list_[::-1])
 print(list_[-2:0:1])
 
 # task 11
+list11 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+list11[1] = 100
+print(list11)
 
+# task 12
+list12 = [1, 2, 3, 4, 5]
+list12[-2:] = [12, 13]
+print(list12)
+
+# task 13
+list13 = [1, 3, 5, 4, 7, 9, 8, 10, 1, 14, 19, 20]
+print(max(list13))
+print(min(list13))
+print(sum(list13))
+print(len(list13))
+print(sum(list13)/len(list13))
+
+# task 14
+brand = ['Acer', 'HP', 'Lenovo', 'Asus', 'Honor', 'Apple', 'Toshiba', 'Samsung']
+index_br = brand.index("Honor")
+print(index_br)
+
+# task 15
+brand = ['Acer', 'HP', 'Lenovo', 'Asus', 'Honor', 'Apple', 'Toshiba', 'Samsung']
+if 'Apple' in brand:
+    index = brand.index("Apple")
+    brand[index] = "Irbis"
+else:
+    print("Apple is not found")
+print(brand)
+
+# task 16
+brand = ['Acer', 'HP', 'Lenovo', 'Asus', 'Honor', 'Apple', 'Toshiba', 'Samsung']
+price = [20000, 27000, 95000, 15000, 50000, 100000, 85000, 80000]
+max_index = price.index(max(price))
+print("Бренд с максимальной стоимостью: ", brand[max_index])
+
+# task 17
+nt = input("vvedite nazvanie producta i stoimost cherez -: ")
