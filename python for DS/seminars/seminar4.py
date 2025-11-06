@@ -92,4 +92,25 @@ max_index = price.index(max(price))
 print("Бренд с максимальной стоимостью: ", brand[max_index])
 
 # task 17
-nt = input("vvedite nazvanie producta i stoimost cherez -: ")
+product_name = []
+price = []
+
+user_input = input("vvedite tovar i cenu cherez '-': ")
+name, cost = user_input.split('-')
+
+name = name.strip()
+cost = cost.strip()
+
+product_name.append(name)
+price.append(int(cost))
+
+print(f"nazvaniya: {product_name}")
+print(f"price: {price}")
+
+# task 18
+input_gr = input('vvedite nachalo i konec: ')
+input_gr = input_gr.split()
+list18 = list(range(int(input_gr[0]), int(input_gr[1])))
+print(list18)
+
+# task 19
