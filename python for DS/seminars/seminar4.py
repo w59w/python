@@ -114,3 +114,4 @@ list18 = list(range(int(input_gr[0]), int(input_gr[1])))
 print(list18)
 
 # task 19
+daily_list = [1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1]
