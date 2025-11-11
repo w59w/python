@@ -1,5 +1,4 @@
 # task 1
-
 list1 = []
 list2 = list()
 print(f"Type of list1: {type(list1)}")
