@@ -1,0 +1,32 @@
+CREATE TABLE clients (
+    client_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    birth_date DATE,
+    phone VARCHAR(20) UNIQUE
+);
+
+CREATE TABLE accounts (
+    account_id SERIAL PRIMARY KEY,
+    client_id INT REFERENCES clients(client_id),
+    account_number VARCHAR(34) UNIQUE,
+    currency CHAR(3),
+    balance DECIMAL(18,2) DEFAULT 0
+);
+
+CREATE TABLE transaction_types (
+    type_id SERIAL PRIMARY KEY,
+    code VARCHAR(20) UNIQUE,
+    name VARCHAR(50)
+);
+
+CREATE TABLE transactions (
+    transaction_id SERIAL PRIMARY KEY,
+    account_id INT REFERENCES accounts(account_id),
+    type_id INT REFERENCES transaction_types(type_id),
+    amount DECIMAL(18,2),
+    transaction_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+ALTER TABLE transactions
+ADD COLUMN to_account_id INT REFERENCES accounts(account_id);
