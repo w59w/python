@@ -1,0 +1,27 @@
+﻿CREATE TABLE students (
+        id SERIAL PRIMARY KEY,
+        first_name VARCHAR(50),
+        last_name VARCHAR(50),
+        birth_date DATE,
+        has_budget BOOLEAN DEFAULT FALSE,
+        phone BIGINT UNIQUE,
+        course VARCHAR(50),
+        is_active BOOLEAN DEFAULT NULL
+);
+
+
+INSERT INTO students (first_name, last_name, birth_date, has_budget, phone, course)
+VALUES
+('Amina', 'Bekova', '2006-05-12', TRUE, 996700111111, 'Computer Science'),
+('Islam', 'Turgunov', '2009-03-20', FALSE, 996700222222, 'Economics'),
+('Aizada', 'Sadykova', '2004-11-01', TRUE, 996700333333, 'Mathematics'),
+('Nursultan', 'Kadyrov', '2010-08-15', FALSE, 996700444444, 'Physics'),
+('Elina', 'Abdieva', '2003-02-27', TRUE, 996700555555, 'Law');
+
+
+UPDATE students
+SET is_active = FALSE
+WHERE birth_date > CURRENT_DATE - INTERVAL '18 years';
+
+
+SELECT * FROM students;
