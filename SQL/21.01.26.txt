@@ -1,0 +1,30 @@
+CREATE TABLE users (
+    name VARCHAR(20),
+    age INTEGER NOT NULL,
+    email VARCHAR(100) UNIQUE
+);
+
+
+INSERT INTO users (name, age, email) VALUES
+('Kumushai', 21, 'kumiwa5@icloud.com'),
+('Bob', 15, 'bobotlichnik@gmail.com'),
+('Thankyou', 20, 'iminlovew@gmail.com');
+
+
+SELECT * FROM users;
+
+
+UPDATE users
+SET email = 'bobotlichnik@gmail.com'
+WHERE name = 'Bob';
+
+
+INSERT INTO users (age) VALUES (25), (20), (12);
+
+SELECT name, age FROM users WHERE age > 18;
+SELECT * FROM users WHERE name ILIKE 'B%';
+SELECT * FROM users WHERE age BETWEEN 10 AND 20;
+SELECT * FROM users WHERE age IN(15, 21, 40);
+
+DELETE FROM users
+WHERE name IS NULL;
